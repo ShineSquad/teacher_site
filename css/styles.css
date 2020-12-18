@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "MontserratRegular";
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  src: url("fonts/Montserrat-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MontserratMedium";
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  src: url("fonts/Montserrat-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MontserratSemiBold";
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  src: url("fonts/Montserrat-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MontserratBold";
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  src: url("fonts/Montserrat-Bold.ttf") format("truetype"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: MontserratMedium; }
+  * body {
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+
+#left_section {
+  background-color: red;
+  width: 500px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  #left_section .profile_info {
+    display: flex;
+    flex-direction: column; }
+    #left_section .profile_info .photo {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%; }
+
+#right_section {
+  background-color: green;
+  min-height: 100vh;
+  width: 100%; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,77 @@
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_")
+  );
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-weight: $weight;
+    font-style: $style;
+
+    font-display: block;
+    src: $src;
+  }
+}
+
+@include font-face('MontserratRegular', 'fonts/Montserrat-Regular', normal, normal, ttf);
+@include font-face('MontserratMedium', 'fonts/Montserrat-Medium', normal, normal, ttf);
+@include font-face('MontserratSemiBold', 'fonts/Montserrat-SemiBold', normal, normal, ttf);
+@include font-face('MontserratBold', 'fonts/Montserrat-Bold', normal, normal, ttf);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: MontserratMedium;
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+#left_section {
+  background-color: red;
+  width: 500px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .profile_info {
+    display: flex;
+    flex-direction: column;
+    .photo {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+    }
+  }
+}
+
+#right_section {
+  background-color: green;
+  min-height: 100vh;
+  width: 100%;
+}
