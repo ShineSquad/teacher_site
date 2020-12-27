@@ -11,46 +11,17 @@
 		<title>Сайт</title>
 	</head>
 	<body>
-		<!-- <header>
-			<ul class="nav">
-				<li class="item"><a class="link" href="#">Главная</a></li>
-				<li class="item"><a class="link" href="#">Об авторе</a></li>
-				<li class="item"><a class="link" href="#">Достижения учеников</a></li>
-				<li class="item"><a class="link" href="#">Проектная деятельность</a></li>
-				<li class="item">
-					<a class="link" href="#">
-						Методическая копилка
-						<svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow">
-							<path d="M10.785 0.00999454C10.6925 0.0170699 10.6066 0.0571926 10.545 0.121995L6 4.36399L1.455 0.121995C1.41712 0.0851904 1.37076 0.0569225 1.31943 0.0393359C1.2681 0.0217492 1.21315 0.0153058 1.15875 0.0204945C1.09091 0.0272829 1.02653 0.0519237 0.973119 0.0915464C0.919704 0.131169 0.879452 0.184142 0.857052 0.244295C0.834653 0.304447 0.831027 0.369301 0.846599 0.431302C0.86217 0.493304 0.896297 0.549899 0.945004 0.594494L5.74501 5.07449C5.77845 5.10581 5.81819 5.13066 5.86195 5.14762C5.90571 5.16458 5.95263 5.1733 6 5.1733C6.04738 5.1733 6.0943 5.16458 6.13806 5.14762C6.18182 5.13066 6.22156 5.10581 6.255 5.07449L11.055 0.594494C11.1109 0.547454 11.1496 0.48525 11.1656 0.416626C11.1817 0.348002 11.1743 0.276408 11.1445 0.211906C11.1147 0.147405 11.064 0.0932389 10.9995 0.0570224C10.935 0.0208058 10.86 0.00435939 10.785 0.00999454Z" fill="black"/>
-						</svg>
-					</a>
-					<ul class="sub_nav">
-						<li class="sub_item"><a class="sub_link" href="#">УМК</a></li>
-						<li class="sub_item"><a class="sub_link" href="#">КИМ</a></li>
-					</ul>
-				</li>
-				<li class="item"><a class="link" href="#">Подготовка к экзаменам</a></li>
-				<li class="item"><a class="link" href="#">Это интересно</a></li>
-			</ul>
-		</header>
-		<section id="about" class="section_alignment">
-			<div class="container">
-				<div>
-					about
-				</div>
-			</div>
-		</section> -->
 		<section id="left_section">
 			<div class="profile_info">
 				<img src="https://peterburg2.ru/uploads/20/03/04/ga11_hu65f.JPG" class="photo">
 				<h2 class="subject">Сайт учителя физики</h2>
-				<h1 class="fio">Киселевой Натальи Александровна</h1>
+				<h1 class="fio">Киселевой Наталии Александровны</h1>
 			</div>
 			<ul class="nav">
-				<li class="item"><a class="link" href="#">Главная</a></li>
-				<li class="item"><a class="link" href="#">Об авторе</a></li>
-				<li class="item"><a class="link" href="#">Достижения учеников</a></li>
-				<li class="item"><a class="link" href="#">Проектная деятельность</a></li>
+				<li class="item"><a class="link" href="#" onclick="change_nav('home')">Главная</a></li>
+				<li class="item"><a class="link" href="#" onclick="change_nav('about')">Об авторе</a></li>
+				<li class="item"><a class="link" href="#" onclick="change_nav('achievements')">Достижения учеников</a></li>
+				<li class="item"><a class="link" href="#" onclick="change_nav('project_activities')">Проектная деятельность</a></li>
 				<li class="item">
 					<a class="link" href="#">
 						Методическая копилка
@@ -63,12 +34,29 @@
 						<li class="sub_item"><a class="sub_link" href="#">КИМ</a></li>
 					</ul>
 				</li>
-				<li class="item"><a class="link" href="#">Подготовка к экзаменам</a></li>
-				<li class="item"><a class="link" href="#">Это интересно</a></li>
+				<li class="item"><a class="link" href="#" onclick="change_nav('exams')">Подготовка к экзаменам</a></li>
+				<li class="item"><a class="link" href="#" onclick="change_nav('news')">Это интересно</a></li>
 			</ul>
 		</section>
 		<section id="right_section">
-			g
+			<div id="home">
+				Home
+			</div>
+			<div id="about">
+				About
+			</div>
+			<div id="achievements">
+				Achievements
+			</div>
+			<div id="project_activities">
+				Project activities
+			</div>
+			<div id="exams">
+				Exams
+			</div>
+			<div id="news">
+				News
+			</div>
 		</section>
 	</body>
 </html>

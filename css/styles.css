@@ -34,24 +34,88 @@
     width: 100%;
     display: flex;
     flex-direction: row; }
+    * body ul {
+      list-style-type: none; }
+    * body a {
+      text-decoration: none;
+      color: black; }
 
 #left_section {
-  background-color: red;
-  width: 500px;
+  min-width: 400px;
   min-height: 100vh;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #F0F3F9;
+  justify-content: center; }
   #left_section .profile_info {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px; }
     #left_section .profile_info .photo {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%; }
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px; }
+    #left_section .profile_info .subject {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 20px; }
+    #left_section .profile_info .fio {
+      text-align: center;
+      margin: 10px 0; }
+  #left_section .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #left_section .nav .item {
+      margin: 20px 0; }
+      #left_section .nav .item:hover .sub_nav {
+        display: flex; }
+      #left_section .nav .item .link {
+        font-size: 16px;
+        font-family: MontserratBold;
+        text-align: center; }
+        #left_section .nav .item .link:hover {
+          color: #ff4e0c; }
+          #left_section .nav .item .link:hover svg path {
+            fill: #ff4e0c; }
+      #left_section .nav .item .sub_nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none; }
+        #left_section .nav .item .sub_nav .sub_item {
+          margin: 10px 0;
+          font-size: 16px; }
+          #left_section .nav .item .sub_nav .sub_item .sub_link {
+            font-size: 16px;
+            font-family: MontserratBold;
+            text-align: center; }
+            #left_section .nav .item .sub_nav .sub_item .sub_link:hover {
+              color: #ff4e0c; }
 
 #right_section {
-  background-color: green;
+  box-shadow: 0px 0px 25px rgba(70, 79, 89, 0.1);
+  background-color: white;
   min-height: 100vh;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #right_section #about {
+    display: none; }
+  #right_section #achievements {
+    display: none; }
+  #right_section #project_activities {
+    display: none; }
+  #right_section #exams {
+    display: none; }
+  #right_section #news {
+    display: none; }
+
+@media (max-width: 1200px) {
+  body {
+    flex-direction: column; } }
 
 /*# sourceMappingURL=styles.css.map */
