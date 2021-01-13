@@ -6,5 +6,5 @@ function change_nav(_id) {
             document.getElementById(child.id).style.display = 'none';
         }
 	}
-	document.getElementById(_id).style.display = 'block';
+	document.getElementById(_id).style.display = 'flex';
 }
