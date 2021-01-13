@@ -63,7 +63,7 @@
 
 #left_section {
   min-width: 400px;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #F0F3F9;
@@ -280,18 +280,90 @@
   }
   #achievements {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    height: 100vh;
+    .title {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+    .achievements_table {
+      border-collapse: collapse;
+      border: 1px solid black;
+      .titles {
+        td {
+          text-align: center;
+        }
+      }
+      tr {
+        td:first-child,
+        td:last-child {
+          text-align: center;
+        }
+      }
+    }
   }
   #project_activities {
     display: none;
   }
   #methodical_storage {
     display: none;
-  }
-  #exams {
-    display: none;
-  }
-  #news {
-    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    .top_line,
+    .middle_line,
+    .bottom_line {
+      display: flex;
+      flex-direction: row;
+      height: 33%;
+      width: 95%;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .top_line {
+      .first_item {
+        height: 90%;
+        width: 60%;
+        background-color: red;
+      }
+      .second_item {
+        height: 90%;
+        width: 35%;
+        background-color: red;
+      }
+    }
+    .middle_line {
+      .first_item {
+        height: 90%;
+        width: 47.5%;
+        background-color: red;
+      }
+      .second_item {
+        height: 90%;
+        width: 47.5%;
+        background-color: red;
+      }
+    }
+    .bottom_line {
+      .first_item {
+        height: 90%;
+        width: 30%;
+        background-color: red;
+      }
+      .second_item {
+        height: 90%;
+        width: 30%;
+        background-color: red;
+      }
+      .third_item {
+        height: 90%;
+        width: 30%;
+        background-color: red;
+      }
+    }
   }
 }
 
@@ -308,6 +380,9 @@
       .about {
         margin: 30px;
       }
+    }
+    #achievements {
+      height: auto;
     }
   }
 }

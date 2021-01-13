@@ -43,7 +43,7 @@
 
 #left_section {
   min-width: 400px;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #F0F3F9;
@@ -214,15 +214,67 @@
   #right_section #about {
     display: none; }
   #right_section #achievements {
-    display: none; }
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    height: 100vh; }
+    #right_section #achievements .title {
+      font-size: 32px;
+      margin: 10px 0; }
+    #right_section #achievements .achievements_table {
+      border-collapse: collapse;
+      border: 1px solid black; }
+      #right_section #achievements .achievements_table .titles td {
+        text-align: center; }
+      #right_section #achievements .achievements_table tr td:first-child,
+      #right_section #achievements .achievements_table tr td:last-child {
+        text-align: center; }
   #right_section #project_activities {
     display: none; }
   #right_section #methodical_storage {
-    display: none; }
-  #right_section #exams {
-    display: none; }
-  #right_section #news {
-    display: none; }
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%; }
+    #right_section #methodical_storage .top_line,
+    #right_section #methodical_storage .middle_line,
+    #right_section #methodical_storage .bottom_line {
+      display: flex;
+      flex-direction: row;
+      height: 33%;
+      width: 95%;
+      align-items: center;
+      justify-content: space-between; }
+    #right_section #methodical_storage .top_line .first_item {
+      height: 90%;
+      width: 60%;
+      background-color: red; }
+    #right_section #methodical_storage .top_line .second_item {
+      height: 90%;
+      width: 35%;
+      background-color: red; }
+    #right_section #methodical_storage .middle_line .first_item {
+      height: 90%;
+      width: 47.5%;
+      background-color: red; }
+    #right_section #methodical_storage .middle_line .second_item {
+      height: 90%;
+      width: 47.5%;
+      background-color: red; }
+    #right_section #methodical_storage .bottom_line .first_item {
+      height: 90%;
+      width: 30%;
+      background-color: red; }
+    #right_section #methodical_storage .bottom_line .second_item {
+      height: 90%;
+      width: 30%;
+      background-color: red; }
+    #right_section #methodical_storage .bottom_line .third_item {
+      height: 90%;
+      width: 30%;
+      background-color: red; }
 
 @media (max-width: 1200px) {
   body {
@@ -231,7 +283,9 @@
     height: 400px; }
   #right_section #home .quote,
   #right_section #home .about {
-    margin: 30px; } }
+    margin: 30px; }
+  #right_section #achievements {
+    height: auto; } }
 
 @media (max-width: 750px) {
   #right_section #home .slider {
