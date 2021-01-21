@@ -7,23 +7,36 @@
 		<meta name="robots" content="index,follow" />
 		<meta name="author" content="Shine Squad">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<script type="text/javascript" src="js/scripts.js"></script>
+		
 		<title>Сайт</title>
 	</head>
 	<body>
 		<section id="left_section">
-			<div class="profile_info">
-				<img src="sources/origin/avatar.jpg" class="photo">
-				<h2 class="subject">Сайт учителя физики</h2>
-				<h1 class="fio">Киселевой Наталии Александровны</h1>
+			<div class="low_res">
+				<p class="title menu_title">
+					Сайт учителя физики
+				</p>
+				<div id="menuToggle" class="close">
+				    <input type="checkbox" class="check_menu" />
+				    <span id="span1"></span>
+				    <span id="span2"></span>
+				    <span id="span3"></span>
+				</div>
 			</div>
-			<ul class="nav">
-				<li class="item"><a class="link" href="#" onclick="change_nav('home')">Главная</a></li>
-				<li class="item"><a class="link" href="#" onclick="change_nav('achievements')">Достижения учеников</a></li>
-				<li class="item"><a class="link" href="#" onclick="change_nav('project_activities')">Проектная деятельность</a></li>
-				<li class="item"><a class="link" href="#" onclick="change_nav('methodical_storage')">Методическая копилка</a></li>
-				<li class="item"><a class="link" href="https://oge.sdamgia.ru/" target="_blank">Подготовка к экзаменам</a></li>
-			</ul>
+			<div class="high_res">
+				<div class="profile_info">
+					<img src="sources/origin/avatar.jpg" class="photo">
+					<h2 class="subject">Сайт учителя физики</h2>
+					<h1 class="fio">Киселевой Наталии Александровны</h1>
+				</div>
+				<ul class="nav">
+					<li class="item"><a class="link" onclick="change_nav('home')">Главная</a></li>
+					<li class="item"><a class="link" onclick="change_nav('achievements')">Достижения учеников</a></li>
+					<li class="item"><a class="link" onclick="change_nav('project_activities')">Проектная деятельность</a></li>
+					<li class="item"><a class="link" onclick="change_nav('methodical_storage')">Методическая копилка</a></li>
+					<li class="item"><a class="link" href="https://oge.sdamgia.ru/" target="_blank">Подготовка к экзаменам</a></li>
+				</ul>
+			</div>
 		</section>
 		<section id="right_section">
 			<div id="home">
@@ -57,40 +70,72 @@
 				    <a class="slider__control slider__control_left" href="#" role="button"></a>
 				    <a class="slider__control slider__control_right" href="#" role="button"></a>
 				</div>
-				<div class="quote">
-					«Обучать — значит вдвойне учиться. Детям нужны не поучения, а примеры», - отмечает Жозеф Жубер.
+				<div class="content-slider">
+				  <div class="slider_quote">
+				    <div class="mask">
+				      <ul>
+				        <li class="anim1">
+				          <div class="quote">Обучать — значит вдвойне учиться. Детям нужны не поучения, а примеры.</div>
+				          <div class="source">- Жозеф Жубер</div>
+				        </li>
+				        <li class="anim2">
+				          <div class="quote"> Высшее искусство, которым обладает учитель, — это умение пробудить радость от творческого выражения и получения знаний.</div>
+				          <div class="source">- Альберт Эйнштейн</div>
+				        </li>
+				        <li class="anim3">
+				          <div class="quote">Учитель не тот, кто учит чему-либо, а тот, кто помогает раскрыть своему ученику то, что ему уже известно.</div>
+				          <div class="source">- Пауло Коэльо</div>
+				        </li>
+				        <li class="anim4">
+				          <div class="quote">Знания — как и небеса — принадлежат всем. Ни один учитель не имеет права утаивать их от любого, кто о них просит. Преподавание — искусство отдавать.</div>
+				          <div class="source">- Абрахам Джошуа Гешель</div>
+				        </li>
+				        <li class="anim5">
+				          <div class="quote">Чтобы воспитывать другого, мы должны воспитать прежде всего себя. </div>
+				          <div class="source">- Николай Васильевич Гоголь</div>
+				        </li>
+				      </ul>
+				    </div>
+				  </div>
 				</div>
-				<div class="about">И учителя учатся всю жизнь, стараясь соответствовать требованиям современного мира, не отставать от веяний моды, которым следуют их ученики. Ведь когда учитель и ученик говорят на одном языке, обучение становится продуктивнее. 
+				<div class="about">
+					<p class="about_title">Обо мне</p>
+					<div class="about_description">И учителя учатся всю жизнь, стараясь соответствовать требованиям современного мира, не отставать от веяний моды, которым следуют их ученики. Ведь когда учитель и ученик говорят на одном языке, обучение становится продуктивнее.
+
 					В данный момент вы находитесь на личном сайте учителя физики – Киселевой Наталии Александровны. В 2019 году окончила ФГАОУ ВО РГППУ филиал в городе Нижнем Тагиле по направлению «Информационные технологии в образовании» с красным дипломом. Сейчас работаю в МАОУ гимназии № 18 г. Нижний Тагил.
+					</div>
 				</div>
 				<div class="news">
-					<a href="#">
-						<div class="card">
-							<img src="sources/origin/01_home/galery/01.jpg">
-							<div class="info">
-								<p class="title">Название</p>
-								<p class="description">Описание описание описание описание описание описание описание описание описание описание</p>
+					<p class="news_title">Новости</p>
+					<div class="news_container">
+						<a href="#">
+							<div class="card">
+								<img src="sources/origin/01_home/galery/01.jpg">
+								<div class="info">
+									<p class="title">Название</p>
+									<p class="description">Описание описание описание описание описание описание описание описание описание описание</p>
+								</div>
 							</div>
-						</div>
-					</a>
-					<a href="#">
-						<div class="card">
-							<img src="sources/origin/01_home/galery/02.jpg">
-							<div class="info">
-								<p class="title">Название</p>
-								<p class="description">Описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание</p>
+						</a>
+						<a href="#">
+							<div class="card">
+								<img src="sources/origin/01_home/galery/02.jpg">
+								<div class="info">
+									<p class="title">Название</p>
+									<p class="description">Описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание</p>
+								</div>
 							</div>
-						</div>
-					</a>
-					<a href="#">
-						<div class="card">
-							<img src="sources/origin/01_home/galery/03.jpg">
-							<div class="info">
-								<p class="title">Название</p>
-								<p class="description">Описание описание описание описание описание описание описание описание описание описание</p>
+						</a>
+						<a href="#">
+							<div class="card">
+								<img src="sources/origin/01_home/galery/03.jpg">
+								<div class="info">
+									<p class="title">Название</p>
+									<p class="description">Описание описание описание описание описание описание описание описание описание описание</p>
+								</div>
 							</div>
-						</div>
-					</a>
+						</a>
+					</div>
 				</div>
 			</div>
 			<div id="achievements">
@@ -385,6 +430,7 @@
 				</div>
 			</div>
 		</section>
+		<script type="text/javascript" src="js/scripts.js"></script>
 		<script type="text/javascript" src="js/main_slider.js"></script>
 	</body>
 </html>
